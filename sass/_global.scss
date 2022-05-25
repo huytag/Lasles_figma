@@ -1,0 +1,123 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+body {
+  line-height: 1;
+  font-size: 16px;
+  font-family: $font;
+  color: $text-color;
+  font-weight: 400;
+}
+
+.button {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 13px 45px;
+  text-decoration: none;
+  font-family: $font;
+  border: none;
+  &--primary {
+    font-family: 700;
+    background-color: $primary-color;
+    color: #ffffff;
+    border-radius: 100rem;
+  }
+  &--outline {
+    background-color: transparent;
+    border: 1px solid;
+    color: $primary-color;
+    border-radius: 100rem;
+    font-weight: 500;
+  }
+  &--routed {
+    border-radius: 10px;
+    padding: 17.5px 65px;
+  }
+  &--shadow {
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      background: rgba(245, 56, 56, 0.35);
+      filter: blur(54px);
+      inset: 0;
+      border-radius: 10px;
+      transform: translateY(25px);
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $heading-color;
+  font-weight: bold;
+}
+
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 35px !important;
+  }
+  h2 {
+    font-size: 30px !important;
+  }
+  h3 {
+    font-size: 25px !important;
+  }
+  h4 {
+    font-size: 20px !important;
+  }
+  h5 {
+    font-size: 18px !important;
+  }
+  h6 {
+    font-size: 16px !important;
+  }
+}
+
+
+.heading {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: calc(50 / 35);
+  text-transform: capitalize;
+}
+
+.text {
+  line-height: calc(30 / 16);
+  span {
+    font-weight: 500;
+  }
+}
+
+.boxed {
+    max-width: 555px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+@media screen and (max-width: 767.98px) {
+  .button {
+    padding: 13px 26px;
+  }
+}
